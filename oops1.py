@@ -13,6 +13,12 @@ class Students_kiet:
 
 
 # instance or object of class Student_kiet
-Student1 = Students_kiet(name="Prabhakar", branch="CSIT", session="2021-2025", roll_no=2132211233, mobile_no="9436000032")
+Student1 = Students_kiet(name="Prabhakar", branch="CSIT", session="2021-2025", roll_no=2132211233,
+                         mobile_no="9436000032")
 
-print(Student1.name, Students_kiet.session, Student1.type_kiet)
+# this is how we call instance Attributes
+print(Student1.name, Student1.session)
+
+# this is how we call class Attributes
+print(f"This is class Attribute called on class instance or object{Student1.type_kiet}, This is the class attribute "
+      f"called on Class{Students_kiet.type_kiet}")
